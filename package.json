@@ -1,0 +1,30 @@
+{
+  "name": "irm-unit-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha demo01/test/",
+    "test:file": "mocha test/add.test.js",
+    "test:mochawesome": "mocha test/ --reporter mochawesome",
+    "test:02": "mocha demo02/test/ --require babel-register",
+    "test:03": "mocha demo03/test/ --require babel-register -t 5000",
+    "test:04": "mocha demo04/test/ --require babel-register",
+    "test:05": "mocha demo05/test/ --require babel-register",
+    "test:06": "mocha demo06/test/ --require babel-register",
+    "test:07": "mocha demo07/test/ --require babel-register -t 5000 -R markdown > demo07/result/spec.md"
+  },
+  "keywords": [],
+  "author": "Hades <ironmax@163.com> (http://ironmaxi.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "fetch": "^1.1.0",
+    "mocha": "^4.0.1",
+    "mochawesome": "^3.0.2",
+    "request": "^2.85.0"
+  }
+}
